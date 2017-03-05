@@ -36,8 +36,8 @@ def findFileListWithsubfix(subfix):
 		for x in files:
 			# strs =''+root+''+x
 			if os.path.splitext(x)[1] ==subfix:	
-					print(os.path.join(root,x))
-			# print('%s'% strs)
+					print(os.path.join(root,x)) # print('%s'% strs)
+			
 
 
 if __name__ == '__main__':
