@@ -1,0 +1,46 @@
+技术笔试题：
+
+
+
+1、	改变view的frame，layer的frame是否会变化？改变layer.frame，view的frame是否会变化？请问原因是什么？
+
+	会，会
+	CaLayer是UIView的底层实现,view的frame变化将直接改变layer的frame，反之，layer的frame改变也会改变view的Frame.
+	一个 Layer 的 frame 是由它的 anchorPoint,position,bounds,和 transform 共同决定的，而一个 View 的 frame 只是简单的返回 Layer的 frame，同样 View 的 center和 bounds 也是返回 Layer 的一些属性
+
+
+2、	autoreleasepool的释放时机是什么，什么时候需要自己声明一个autoreleasepool。
+	autoreleasepool对象在当前事件循环(runloop)末尾进行释放。
+	* 利用@autoreleasepool优化循环的内存占用
+
+
+
+3、	nsdictionry底层的数据结构是什么，根据key找到value的时间复杂度是多少？
+
+	NSDictionary是使用hash表来实现key和value之间的映射和存储的。
+	根据key找到value的时间复杂度为0(1)
+
+4、	求一个整数数组中和最大的连续子数组，例如：[1, 2, -4, 4, 10, -3, 4, -5, 1]的最大连续子数组是[4, 10, -3, 4]（需写明思路，并编程实现）。
+
+
+
+5、	请简述在iOS项目中遇到的最大的技术问题是什么，如何解决的？
+
+
+
+选做题（可四选一）： 
+
+
+
+1、	请实现一个完善内存的图片缓存工具，key为url，value为uimage。缓存最大可容纳100张图片，并有淘汰机制。（需编程实现）
+
+
+
+2、	请用效率最高的方式绘制不同颜色的10w个的三角形（需编程实现）
+
+
+
+3、	请用完善的代码实现异步并发读写文件的接口函数（需编程实现）
+
+
+4、	请实现视频添加滤镜的功能，其中视频含音频（需编程实现）

@@ -25,7 +25,7 @@ def get_module_attr(module_name):
 
 
 if __name__ == '__main__':
-	for attr in get_module_attr('os'):
+	for attr in get_module_attr('sqlite3'):
 		print('name:%s\t type:%s \t value: %s '%(attr['name'],attr['type'],attr['value']))
 		pass
 

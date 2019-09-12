@@ -11,14 +11,16 @@
 """
 
 
+import os
+import re
+import sys
+import time
 import urllib2.request
 
-import os
-import time
-import sys
-import re
-
-
+"""
+TODO : fdasf
+"""
+'''	'''
 def getHtml(url):
 	"""获取网页
 		Arguments:
@@ -103,12 +105,3 @@ def get_file(url):
 if __name__ == '__main__':
 	url ="http://www.qiushibaike.com/imgrank/"
 	get_file(url)
-
-  	
-  		 
-
-
-
-
-
-
